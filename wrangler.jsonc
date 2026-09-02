@@ -6,5 +6,15 @@
   "assets": {
     "directory": "./public"
   },
+  "routes": [
+    {
+      "pattern": "eucliq.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.eucliq.com",
+      "custom_domain": true
+    }
+  ],
   "workers_dev": true
 }
