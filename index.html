@@ -385,7 +385,6 @@
 
       const languageButton = document.querySelector("#language-toggle");
       const themeButton = document.querySelector("#theme-toggle");
-      const themeMedia = window.matchMedia("(prefers-color-scheme: light)");
 
       function setLanguage(language) {
         const translation = content[language];
@@ -413,7 +412,7 @@
       const isSlovakDomain = /(^|\.)eucliq\.sk$/i.test(window.location.hostname);
       const defaultLanguage = isSlovakDomain ? "sk" : "en";
       const language = localStorage.getItem("eucliq-language") || defaultLanguage;
-      const theme = localStorage.getItem("eucliq-theme") || (themeMedia.matches ? "light" : "dark");
+      const theme = localStorage.getItem("eucliq-theme") || "dark";
 
       setLanguage(language);
       setTheme(theme);
