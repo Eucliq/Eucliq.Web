@@ -14,6 +14,22 @@
     {
       "pattern": "www.eucliq.com",
       "custom_domain": true
+    },
+    {
+      "pattern": "eucliq.sk",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.eucliq.sk",
+      "custom_domain": true
+    },
+    {
+      "pattern": "eucliq.eu",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.eucliq.eu",
+      "custom_domain": true
     }
   ],
   "workers_dev": true
