@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "eucliq-web",
+  "account_id": "fe61bacbf902788c3d0c9b3dd23ac0ae",
   "compatibility_date": "2026-08-31",
   "assets": {
     "directory": "./public"
