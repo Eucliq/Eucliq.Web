@@ -6,8 +6,8 @@ The public company landing page for Eucliq s. r. o.
 
 This is a dependency-free static site designed for **Cloudflare Pages**:
 
-- Build command: none
-- Build output directory: `/`
+- Build command: `exit 0`
+- Build output directory: `public`
 - Production branch: `main`
 
 Cloudflare Pages is the recommended host for this site: its free plan includes
@@ -30,5 +30,5 @@ their browser.
 
 ## Local preview
 
-Open `index.html` directly in a browser, or use any static HTTP server.
+Open `public\index.html` directly in a browser, or use any static HTTP server.
 Eucliq company website
