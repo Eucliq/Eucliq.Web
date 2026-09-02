@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 3678 1116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <defs>
+        <linearGradient id="brand-wordmark" x1="0" y1="0" x2="3678" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#2acac7"/>
+            <stop offset="0.2" stop-color="#2acac7"/>
+            <stop offset="0.32" stop-color="#fbf5fd"/>
+            <stop offset="0.72" stop-color="#fbf5fd"/>
+            <stop offset="0.84" stop-color="#a8eeaf"/>
+            <stop offset="1" stop-color="#a8eeaf"/>
+        </linearGradient>
+        <style>
+            path, circle { fill: url(#brand-wordmark) !important; }
+        </style>
+    </defs>
     <g transform="matrix(1,0,0,1,-634.91708,-560.161269)">
         <g transform="matrix(117.469504,0,0,95.937043,-23017.985385,-103492.004324)">
             <path d="M221.532,1095.742L221.532,1084.919C221.764,1084.711 222.05,1084.588 222.359,1084.588C222.668,1084.588 222.953,1084.711 223.185,1084.919L223.185,1095.742L221.532,1095.742Z" style="fill:rgb(42,202,199);"/>
