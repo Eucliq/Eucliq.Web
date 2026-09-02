@@ -2,19 +2,23 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 3678 1116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <defs>
-        <linearGradient id="brand-wordmark" x1="0" y1="0" x2="3678" y2="0" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#2acac7"/>
-            <stop offset="0.2" stop-color="#2acac7"/>
-            <stop offset="0.32" stop-color="#fbf5fd"/>
-            <stop offset="0.72" stop-color="#fbf5fd"/>
-            <stop offset="0.84" stop-color="#a8eeaf"/>
-            <stop offset="1" stop-color="#a8eeaf"/>
-        </linearGradient>
+        <clipPath id="first-letter" clipPathUnits="userSpaceOnUse">
+            <rect width="800" height="1116"/>
+        </clipPath>
+        <clipPath id="last-letter" clipPathUnits="userSpaceOnUse">
+            <rect x="2900" width="778" height="1116"/>
+        </clipPath>
+        <mask id="first-letter-mask" maskUnits="userSpaceOnUse" width="3678" height="1116">
+            <use href="#wordmark" clip-path="url(#first-letter)" fill="#fff"/>
+        </mask>
+        <mask id="last-letter-mask" maskUnits="userSpaceOnUse" width="3678" height="1116">
+            <use href="#wordmark" clip-path="url(#last-letter)" fill="#fff"/>
+        </mask>
         <style>
-            path, circle { fill: url(#brand-wordmark) !important; }
+            #wordmark path, #wordmark circle { fill: #fbf5fd !important; }
         </style>
     </defs>
-    <g transform="matrix(1,0,0,1,-634.91708,-560.161269)">
+    <g id="wordmark" transform="matrix(1,0,0,1,-634.91708,-560.161269)">
         <g transform="matrix(117.469504,0,0,95.937043,-23017.985385,-103492.004324)">
             <path d="M221.532,1095.742L221.532,1084.919C221.764,1084.711 222.05,1084.588 222.359,1084.588C222.668,1084.588 222.953,1084.711 223.185,1084.919L223.185,1095.742L221.532,1095.742Z" style="fill:rgb(42,202,199);"/>
         </g>
@@ -34,4 +38,6 @@
             <path d="M1137.639,1179.5C1104.408,1120.153 1040.914,1080 968.117,1080C860.964,1080 773.969,1166.995 773.969,1274.148C773.969,1381.301 860.964,1468.296 968.117,1468.296C1026.694,1468.296 1079.246,1442.299 1114.856,1401.222L1335.109,1401.222C1282.427,1553.203 1137.929,1662.444 968.117,1662.444C753.81,1662.444 579.821,1488.455 579.821,1274.148C579.821,1059.842 753.81,885.852 968.117,885.852C1149.799,885.852 1302.504,1010.9 1344.788,1179.549L1482.411,1179.549C1502.368,1206.758 1514.16,1240.324 1514.16,1276.623C1514.16,1312.921 1502.368,1346.487 1482.411,1373.697L990.775,1373.697C990.778,1373.681 990.781,1373.665 990.784,1373.648L833.066,1373.648C813.108,1346.439 801.317,1312.873 801.317,1276.574C801.317,1240.276 813.108,1206.71 833.066,1179.5L1137.639,1179.5Z" style="fill:rgb(42,202,199);"/>
         </g>
     </g>
+    <rect width="3678" height="1116" fill="#2acac7" mask="url(#first-letter-mask)"/>
+    <rect width="3678" height="1116" fill="#a8eeaf" mask="url(#last-letter-mask)"/>
 </svg>
